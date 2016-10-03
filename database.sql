@@ -3,6 +3,7 @@ CREATE TABLE clients (
 id SERIAL PRIMARY KEY,
 first_name VARCHAR (100) NOT NULL,
 last_name VARCHAR (100) NOT NULL,
+email VARCHAR (30) NOT NULL,
 subject VARCHAR (100) NOT NULL,
 message VARCHAR (500)
 );
