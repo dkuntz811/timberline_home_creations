@@ -19,8 +19,5 @@ myApp.config(['$routeProvider', function($routeProvider){
 	when('/contact', {
 		templateUrl: '/views/partials/contact.html',
 		controller: 'contactController'
-	}).
-	otherwise({
-		redirectTo: '/index.html'
 	});
 }]);//myApp config

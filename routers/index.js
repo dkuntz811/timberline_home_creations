@@ -4,9 +4,9 @@ var path = require ('path');
 
 console.log('in index router');
 
-router.get('/', function(req, res){
-	var indexFile = path.join(__dirname, '../public/views/index.html');
-	res.sendFile(indexFile);
+router.get('/*', function (req, res){
+	var file = req.params[0]||'../public/views/index.html';
+	res.sendFile(path.join(__dirname, file));
 });
 
 
