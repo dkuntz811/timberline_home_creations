@@ -9,6 +9,7 @@ Technologies used:
 - Express
 - Angular
 - Postgres SQL
+- Auth0
 - Heroku
 - Bootstrap
 - Sass
