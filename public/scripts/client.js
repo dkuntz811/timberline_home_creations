@@ -14,10 +14,11 @@ myApp.config(['$routeProvider', function($routeProvider){
 	}).
 	when('/portfolio', {
 		templateUrl: '/views/partials/portfolio.html',
-		controller: portfolioController
+		controller: 'portfolioController'
 	}).
 	when('/contact', {
-		templateUrl: '/views/partials/contact.html'
+		templateUrl: '/views/partials/contact.html',
+		controller: 'contactController'
 	}).
 	otherwise({
 		redirectTo: '/index.html'

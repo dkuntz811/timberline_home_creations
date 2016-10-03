@@ -7,7 +7,6 @@ console.log('in index router');
 router.get('/', function(req, res){
 	var indexFile = path.join(__dirname, '../public/views/index.html');
 	res.sendFile(indexFile);
-	console.log('went to public');
 });
 
 

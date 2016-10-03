@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app = "myApp">
 	<head>
 		<meta charset="utf-8">
 		<title>Timberline Home Creations</title>
@@ -7,7 +7,18 @@
 		<script src = "./vendors/angular-route.min.js"></script>
 		<script src = "../scripts/client.js"></script>
 	</head>
+	<header>Timberline Home Creations
+		<ul>
+			<li><a href="index">Home</a></li>
+			<li><a href="about">About</a></li>
+			<li><a href="portfolio">Portfolio</a></li>
+			<li><a href="Contact">Contact</a></li>
+		</ul>
+	</header>
 	<body>
+		<main ng-view>
+
+		</main>
 
 	</body>
 </html>
