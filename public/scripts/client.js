@@ -1,7 +1,7 @@
 console.log('sourced client js');
 
 var myApp = angular.module('myApp', ['ngRoute']);
-
+console.log('looking for routes');
 myApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider.
 	when('/index', {
