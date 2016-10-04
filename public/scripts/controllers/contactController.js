@@ -22,19 +22,6 @@ myApp.controller('contactController', ['$scope', '$http', function($scope, $http
 		});
 	};
 
-	$scope.favorites = [];
-
- $scope.getContacts = function(){
-	 console.log('in getContacts function');
-	 $http({
-		 method: 'GET',
-		 url: '/getContacts'
-	 }).then(function(response){
-		 console.log('get response is', response);
-	 }, function errorCallback(response){
-		 console.log('error response is', response);
-	 });
- };
 
 
 
