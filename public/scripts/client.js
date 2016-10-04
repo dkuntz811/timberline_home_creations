@@ -16,6 +16,10 @@ myApp.config(['$routeProvider', function($routeProvider){
 		templateUrl: '/views/partials/contact.html',
 		controller: 'contactController'
 	}).
+	when('/admin', {
+		templateUrl: '/views/partials/admin.html',
+		controller: 'adminController'
+	}).
 	otherwise({
 		redirectTo: '/index'
 	});

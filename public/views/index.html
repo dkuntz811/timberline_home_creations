@@ -10,22 +10,24 @@
 		<script src="./scripts/controllers/aboutController.js"></script>
 		<script src="./scripts/controllers/portfolioController.js"></script>
 		<script src="./scripts/controllers/contactController.js"></script>
+		<script src="./scripts/controllers/adminController.js"></script>
 	</head>
 	<header>Timberline Home Creations
 		<ul style="list-style-type:none">
-			
+
 			<li><a href="#about">About</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<button>Submit</button>
+		
 		</ul>
 	</header>
 	<body>
 		<main ng-view>
 
 		</main>
+		</body>
 <footer>
-	<button>Admin</button>
+	<button ng-click="getContacts()">Admin</button>
 	</footer
-	</body>
+
 </html>

@@ -7,9 +7,15 @@ var connectionString = 'postgres//localhost:5432/timberline';
 
 app.use(bodyParser.json());
 
+//routers
 var index = require('../routers/index');
 app.use('/', index);
 
+var contact = require('../routers/contact');
+app.use('/', contact);
+
+var admin = require('../routers/admin');
+app.use('/', admin);
 // app.use(express.static('public'));
 
 
