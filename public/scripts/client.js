@@ -4,10 +4,6 @@ var myApp = angular.module('myApp', ['ngRoute']);
 console.log('looking for routes');
 myApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider.
-	when('/index', {
-		templateUrl: '/views/index.html',
-		controller: 'indexController'
-	}).
 	when('/about', {
 		templateUrl: '/views/partials/about.html',
 		controller: 'aboutController'
@@ -19,5 +15,8 @@ myApp.config(['$routeProvider', function($routeProvider){
 	when('/contact', {
 		templateUrl: '/views/partials/contact.html',
 		controller: 'contactController'
+	}).
+	otherwise({
+		redirectTo: '/index'
 	});
 }]);//myApp config
