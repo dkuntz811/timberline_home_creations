@@ -16,7 +16,7 @@ myApp.controller('contactController', ['$scope', '$http', function($scope, $http
 			url: '/contact',
 			data: dataToSend
 		}).then(function(response){
-			console.log('post resonse is', response);
+			console.log('post response is', response);
 		}, function errorCallback(response){
 			console.log('err', response);
 		});
@@ -24,16 +24,18 @@ myApp.controller('contactController', ['$scope', '$http', function($scope, $http
 
 	$scope.favorites = [];
 
-	function getContacts(){
-		$http.get('/getContact').then(function(response){
-			if(response.status==200){
-				$scope.favorites=response.data;
-				console.log('response is good')
-			} else {
-				console.log('error getting contacts');
-			}
-		});
-	}
+ $scope.getContacts = function(){
+	 console.log('in getContacts function');
+	 $http({
+		 method: 'GET',
+		 url: '/getContacts'
+	 }).then(function(response){
+		 console.log('get response is', response);
+	 }, function errorCallback(response){
+		 console.log('error response is', response);
+	 });
+ };
+
 
 
 }]);
