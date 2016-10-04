@@ -1,5 +1,8 @@
 <header>Timberline Mission Control</header>
 <button ng-click = "getContacts()">Test</button>
 <div ng-repeat="contact in contacts">
- {{contact}}
+ Name: {{contact.first_name}}{{contact.last_name}}
+ Email: {{contact.email}}
+ Subject: {{contact.subject}}
+ Message: {{contact.message}}
 </div>
