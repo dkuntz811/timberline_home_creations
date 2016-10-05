@@ -10,6 +10,10 @@ body {
 	background: #AAA239;
 }
 
+.header {
+	background-color = white;
+}
+
 .portfolio {
 	color: #5E5703;
 	font-size: 3em;
