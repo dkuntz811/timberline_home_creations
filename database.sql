@@ -12,3 +12,6 @@ message VARCHAR (500)
 CREATE TABLE pictures (
 pics VARCHAR (30)
 );
+
+--GET all information for tables
+SELECT * FROM clients;

@@ -1,1 +1,8 @@
-<p>portfolio</p>
+<div class = "imagegallery">
+	<h1 class = "portfolio">Portfolio</h1>
+	<div id="gallery" ng-init="selection = images[0]">
+		<div class = "image-list"><img ng-repeat="img in images" src = "{{img}}"
+			ng-click = "$parent.selection = img"/>
+	</div>
+		<div class = "hero-image"><img src ="{{selection}}"/></div>
+</div>

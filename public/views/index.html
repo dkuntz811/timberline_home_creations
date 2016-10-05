@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Timberline Home Creations</title>
+		<script src="https://cdn.auth0.com/js/lock-8.1.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<script src="./vendors/angular.min.js"></script>
 		<script src="./vendors/angular-route.min.js"></script>
 		<script src="./scripts/client.js"></script>
@@ -11,6 +13,8 @@
 		<script src="./scripts/controllers/portfolioController.js"></script>
 		<script src="./scripts/controllers/contactController.js"></script>
 		<script src="./scripts/controllers/adminController.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
 	</head>
 	<header>Timberline Home Creations
 		<ul style="list-style-type:none">
@@ -27,7 +31,7 @@
 		</main>
 		</body>
 <footer>
-	<button>Admin</button>
-	</footer
+	<button ng-click="logIn()">Admin</button>
+</footer>
 
 </html>
