@@ -7,7 +7,7 @@
 }
 
 body {
-	background: #AAA239;
+	background: #D0D5B2;
 }
 
 .header {
@@ -15,7 +15,7 @@ body {
 }
 
 .portfolio {
-	color: #5E5703;
+	color: #667600;
 	font-size: 3em;
 	text-align: center;
 	margin: 1em;
@@ -23,9 +23,11 @@ body {
 
 #gallery {
 	max-width: 50em;
+	max-height: 100em;
 	margin: 1em auto;
-	background: #F6F09D;
+	background: #504800;
 	padding: 1em;
+
 }
 
 .image-list {
