@@ -7,11 +7,12 @@
 }
 
 body {
+	font-family: Candara;
 	background: #D0D5B2;
 }
 
 .header {
-	background-color = white;
+	background-color: white;
 }
 
 .portfolio {
@@ -78,4 +79,69 @@ flex-direction: row;
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.contactinfo {
+	margin-left: 250px;
+	margin-top: 20px;
+	color: #667600;
+	font-size: 20px;
+}
+
+.firstname {
+
+	color: #667600;
+}
+
+.contactform {
+	margin-left: 250px;
+	font-size: 20px;
+}
+.firstnameinput {
+	height: 35px;
+	width: 400px;
+	background-color: #F5F5F5;
+
+}
+
+.lastname {
+	font-size: 50px:
+	color: #667600;
+}
+
+.lastnameinput {
+	height: 35px;
+	width: 395px;
+	background-color: #F5F5F5;
+}
+
+
+.email {
+	color: #667600;;
+}
+
+.emailinput {
+	height: 35px;
+	width: 800px;
+	background-color: #F5F5F5;
+}
+
+.subject {
+	color: #667600;
+}
+
+.subjectinput {
+	height: 35px;
+	width: 800px;
+	background-color: #F5F5F5;
+}
+
+.message {
+	color: #667600;
+}
+
+.messageinput {
+	height: 200px;
+	width: 800px;
+	background-color: #F5F5F5;
 }

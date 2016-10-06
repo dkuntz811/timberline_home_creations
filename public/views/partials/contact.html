@@ -1,24 +1,36 @@
+<div class = "contactimage">
+</div>
+<div class = "contactinfo">
+	<p>Timberline Home Creations, LLC</p>
+	<p>208.709.4616 (Phone)</p>
+	<p>208.354.2305 (Fax)</p>
+	<p>548 Cobblecrest Rd. Driggs, ID 83422
+		<br>
+	<p>Please email us:   TimberlineHomeCreations@gmail.com</p>
+	<p>Or complete the form below: </p>
+</div><br><br>
+
 <div>
-<form>
-	<label for="first_name" type = "text">First Name:
-		<input ng-model = "first_name" type = "text" placeholder="First Name">
+<form class = "contactform">
+	<label class = "firstname" for="first_name" type = "text">First Name:<br>
+		<input class = "firstnameinput" ng-model = "first_name" type = "text" >
 	</label>
-	<label for="last_name" type = "text">Last Name:
-		<input ng-model = "last_name" type = "text" placeholder="Last Name">
+	<label class = "lastname" for="last_name" type = "text">Last Name:<br>
+		<input class = "lastnameinput" ng-model = "last_name" type = "text" >
 	</label><br>
-	<label for="email" type = "text">Email Address:
-		<input ng-model = "email" type = "text"placeholder="example@myaddress.com">
+	<label class = "email" for="email" type = "text">Email Address:<br>
+		<input class = "emailinput" ng-model = "email" type = "text"placeholder="example@myaddress.com">
 	</label><br>
-	<label for="subject" type = "text">Subject
-		<input ng-model = "subject" type = "text" placeholder="Subject">
+	<label class = "subject" for="subject" type = "text">Subject<br>
+		<input class = "subjectinput" ng-model = "subject" type = "text" >
 	</label><br>
-	<label for="message" type = "text">Message:
-		<input ng-model = "message" type = "text" placeholder="Message (500 characters or less)">
-	</label>
-	<button ng-click = "postContact()">Submit</button>
+	<label class = "message" for="message" type = "text">Message:<br>
+		<input class = "messageinput" ng-model = "message" type = "text" placeholder="Message (500 characters or less)">
+	</label><br><br>
+	<button class = "contactbutton" ng-click = "postContact()">Submit</button>
 </form>
 <div ng-controller="adminController">
-		<button ng-click="logIn()">Admin</button>
+		<button class = "loginbutton" ng-click="logIn()">Admin</button>
 	</div>
 
 </div>
