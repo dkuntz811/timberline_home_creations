@@ -9,11 +9,36 @@
 body {
 	font-family: Candara;
 	background: #D0D5B2;
+
+
 }
 
 .header {
 	background-color: white;
+
 }
+
+.logo {
+	height: 150px;
+	width: 300px;
+	margin-left: 25px;
+	margin-top: 10px;
+}
+
+.mainpic{
+	width: 100%;
+	 height: 100%;
+	 position: fixed;
+	 left: 0px;
+	 top: 150px;
+	 z-index: -1;
+}
+
+.stretch {
+	width:100%;
+	 height:100%;
+}
+
 
 .portfolio {
 	color: #667600;
