@@ -1,3 +1,5 @@
+/*http://paletton.com/  pallette id: 51E0u0kw0a2jOjepMf0JJ6kU33A*/
+
 *,
 *:before,
 *:after{
@@ -9,13 +11,14 @@
 body {
 	font-family: Candara;
 	background: #D0D5B2;
-
-
+	min-height: 400px;
+	margin-bottom: 100px;
+	clear: both;
 }
 
 .header {
 	background-color: #D0D5B2;
-
+	height: 200px;
 }
 
 .logo {
@@ -28,6 +31,26 @@ body {
 .container-fluid {
 	background-color: #322E00;
 	color: #99913A;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	height: 50px;
+}
+
+.footer {
+	background-color: #322E00;
+	color: #99913A;
+	font-size: 15px;
+	text-align: center;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+#home {
+	max-height: 100%
 }
 
 .mainpic{
@@ -118,6 +141,18 @@ flex-direction: row;
           transform: translateY(0);
 }
 
+.contactimage {
+	height: 100px;
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding-top:0px;
+	padding-right: 0px;
+	padding-bottom: 100px;
+	padding-left: 0px;
+}
+
 .contactinfo {
 	margin-left: 250px;
 	margin-top: 20px;
@@ -134,6 +169,7 @@ flex-direction: row;
 	margin-left: 250px;
 	font-size: 20px;
 	color: #322E00;
+	padding-bottom: 50px;
 }
 .firstnameinput {
 	height: 35px;
@@ -182,4 +218,15 @@ flex-direction: row;
 	height: 200px;
 	width: 800px;
 	background-color: #F5F5F5;
+}
+
+#submit {
+	background-color: #322E00;
+}
+
+.loginbutton {
+	background-color: #322E00;
+	color: #F5F5F5;
+	border-radius: 5px;
+	margin-bottom: 10px;
 }

@@ -1,4 +1,5 @@
 <div class = "contactimage">
+<img src = "./assets/2.jpg">
 
 </div>
 <div class = "contactinfo">
@@ -28,7 +29,7 @@
 	<label class = "message" for="message" type = "text">Message:<br>
 		<input class = "messageinput" ng-model = "message" type = "text" placeholder="Message (500 characters or less)">
 	</label><br><br>
-	<button class = "contactbutton" ng-click = "postContact()">Submit</button>
+	<button id ="submit" type = "button" class = "btn btn-primary" ng-click = "postContact()">Submit</button>
 </form>
 <div ng-controller="adminController">
 		<button class = "loginbutton" ng-click="logIn()">Admin</button>

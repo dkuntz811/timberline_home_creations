@@ -20,6 +20,9 @@ myApp.config(['$routeProvider', function($routeProvider){
 		templateUrl: '/views/partials/admin.html',
 		controller: 'adminController'
 	}).
+	when('/home', {
+		templateUrl: '/views/partials/home.html'
+	}).
 	otherwise({
 		redirectTo: '/index'
 	});
