@@ -47,7 +47,14 @@ myApp.controller('contactController', ['$scope', '$http', function($scope, $http
 				console.log('token:', token);
 				localStorage.setItem('userProfile', JSON.stringify(profile));
 				console.log('Auth0 success, Profile:', profile);
-				window.location.href='http://localhost:7070/#/admin';
+				if {
+					profile.email == 'timberlinehomecreations@gmail.com';
+					window.location.href='http://localhost:7070/#/admin';
+				}
+				else {
+					alert('You do not have access to this page');
+				}
+
 			}
 		});//end lock.show
 	}; //end login
@@ -62,6 +69,7 @@ myApp.controller('contactController', ['$scope', '$http', function($scope, $http
 				emptyLocalStorage();
 				$scope.showUser = false;
 			}
+			window.location.href='http://localhost:7070/#/home';
 		});//end $http
 	};//end logout
 
