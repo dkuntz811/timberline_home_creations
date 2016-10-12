@@ -9,11 +9,12 @@
 }
 
 body {
-	font-family: Candara;
+	font-family: Candara, sans-serif;;
 	background: #D0D5B2;
 	min-height: 400px;
 	margin-bottom: 100px;
 	clear: both;
+	height: 100%;
 }
 
 .header {
@@ -41,16 +42,22 @@ body {
 	color: #99913A;
 	font-size: 15px;
 	text-align: center;
-	height: 100px;
+	height: 10%;
 	width: 100%;
 	position: fixed;
 	bottom: 0px;
-	margin-top: 20px;
+	margin-top: 50px;
 	padding-top: 20px;
 }
 
 #home {
 	max-height: 100%
+	margin-bottom: 100px;
+}
+
+.home {
+	padding-bottom: 100px;
+	margin-bottom: 15%;
 }
 
 .mainpic{
@@ -60,6 +67,7 @@ body {
 	 left: 0px;
 	 top: 150px;
 	 z-index: -1;
+	 margin-bottom: 100px;
 }
 
 .mainpictext {
@@ -83,11 +91,12 @@ body {
 }
 
 #gallery {
-	max-width: 50em;
+	max-width: 52em;
 	max-height: 100em;
 	margin: 1em auto;
-	background: #99823A;
+	background: #322E00;
 	padding: 1em;
+	margin-bottom: 75px;
 
 }
 
@@ -119,8 +128,9 @@ flex-direction: row;
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 33%;
-  width: 100%;
+  width: auto%;
 	height: auto;
+	object-fit: cover;
 }
 .image-list > img:hover {
   opacity: 0.8;
@@ -156,14 +166,9 @@ flex-direction: row;
 
 .contactinfo {
 	margin-left: 250px;
-	margin-top: 20px;
+	margin-top: 30px;
 	color: #322E00;
 	font-size: 20px;
-}
-
-.firstname {
-
-	color: #322E00;
 }
 
 .contactform {
@@ -171,6 +176,12 @@ flex-direction: row;
 	font-size: 20px;
 	color: #322E00;
 	padding-bottom: 50px;
+	align: center;
+}
+
+.firstname {
+
+	color: #322E00;
 }
 .firstnameinput {
 	height: 35px;
