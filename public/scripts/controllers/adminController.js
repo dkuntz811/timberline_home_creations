@@ -19,9 +19,6 @@ myApp.controller('adminController', ['$scope', '$http', function($scope, $http){
 	 });
  };
 
- $scope.checkboxModel = {
-	 value1: true;
- }
 
 	// $scope.init = function(){
 	// 	console.log('in init');

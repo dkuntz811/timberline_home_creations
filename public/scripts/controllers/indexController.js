@@ -1,4 +1,4 @@
-myApp.controller('indexController', ['$scope', '$location', '$anchorScroll' function($scope, $location, $anchorScroll){
+myApp.controller('indexController', ['$scope', function($scope){
 	console.log('in index Controller');
 
 
