@@ -1,19 +1,18 @@
-<h1>Timberline Mission Control</h1><br><br>
-<div class = "clients" ng-init = "getContacts()">
+<h1 class = "mission">Timberline Mission Control</h1><br><br>
+<div class = "clients" ng-init = "getContacts()" >
 <div ng-repeat="contact in contacts">
  <strong>Name:</strong> {{contact.first_name}} {{contact.last_name}}
  <strong>Email:</strong> {{contact.email}}
  <strong>Subject:</strong> {{contact.subject}}<br>
  <strong>Message:</strong> {{contact.message}}<br><br>
- <label>Contacted:
-   <input type = "checkbox" ng-model="checkboxModel.value1">
- </label>
+ <strong>Darren's Notes:</strong>{{note.notes}}<br><br>
  <label>Notes:
    <input type = "text" ng-model = "notes">
  </label>
+ <button class = "submitnote" type = "button" ng-click = "postNote()">Submit</button>
  <label>Delete Contact Info:
-   <button class = "delete" type = "button" ng-click = "deleteContact()"></button>
- </label>
+   <button class = "delete" type = "button" ng-click = "deleteContact()">Delete</button>
+ </label><br><br><br>
 </div>
-<button ng-click="logOut()">Log Out</button><br><br><br>
+<button ng-click="logOut()">Log Out</button>
 </div>

@@ -27,7 +27,25 @@ router.get('/admin', function(req, res){
 	});//end pg.connect
 });//end router.get
 
-router.delete('/deleteclient/id', function (req, res){
+router.post ('/note', function (req, res){
+	var note = req.body;
+	console.log('note is', note);
+	pg.connect(connectionString, function (err, client, done){
+		if (err) {
+			console.log('connection error', err);
+		} else {
+			var queryResults = client.query('INSERT INTO contacts (note) VALUES ($1)' ,
+					[note]);
+		}
+		queryResults.on('end', function(){
+			done();
+			//send back result to client
+			res.send({success: true});
+		});
+	});
+});//end router.post
+
+router.post('/clients/id', function (req, res){
 	console.log(req.params.id);
 	console.log('in router.delete function');
 	var id = req.params.id;

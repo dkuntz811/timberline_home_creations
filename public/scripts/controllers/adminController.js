@@ -1,10 +1,10 @@
-var lock = new Auth0Lock('nUkdDmhYSGNLolT7jWzmYZ39Efq6CH0Y', 'dkuntz811.auth0.com');
 var logOutUrl = 'https://dkuntz811.auth0.com/v2/logout';
 
 myApp.controller('adminController', ['$scope', '$http', function($scope, $http){
 	console.log('in admin Controller');
 
  $scope.contacts = [];
+ $scope.notes = [];
 
  $scope.getContacts = function(){
 	 console.log('in getContacts function');
@@ -19,6 +19,49 @@ myApp.controller('adminController', ['$scope', '$http', function($scope, $http){
 	 });
  };
 
+ $scope.postNote = function(){
+	 var dataToSend = {
+		 note: $scope.note
+	 };
+	 console.log('dataToSend is ', dataToSend);
+	 $http({
+		 method: 'POST',
+		 url: '/note',
+		 data: dataToSend
+	 }).then(function(response){
+		 console.log('postnote response is ', response);
+	 }, function errorCallback(response){
+		 console.log('error in postnote', response);
+	 });//end .then
+ };//end $scope.postNote
+
+
+
+ $scope.deleteContact = function(id){
+	 console.log('clicked delete', id);
+	 $http({
+		 method: 'DELETE',
+		 url: '/clients/' + id
+	 }).then(function successCallback(response){
+		 console.log('delete response = ', response);
+	 }, function errorCallback(response) {
+		 console.log('client delete error', response);
+	 });//end .then
+ };//end $scope.deleteContact
+
+ $scope.logOut = function(){
+	 //call out logOutUrl
+	 $http({
+		 method: 'GET',
+		 url: logOutUrl
+	 }).then(function(data){
+		 if(data.data == 'OK'){
+			 emptyLocalStorage();
+			 $scope.showUser = false;
+		 }
+		 window.location.href='http://localhost:7070/#/home';
+	 });//end $http
+ };//end logout
 
 	// $scope.init = function(){
 	// 	console.log('in init');

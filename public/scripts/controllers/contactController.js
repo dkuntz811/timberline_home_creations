@@ -1,3 +1,7 @@
+var lock = new Auth0Lock('nUkdDmhYSGNLolT7jWzmYZ39Efq6CH0Y', 'dkuntz811.auth0.com');
+var logOutUrl = 'https://dkuntz811.auth0.com/v2/logout';
+
+
 myApp.controller('contactController', ['$scope', '$http', function($scope, $http){
 	console.log('in contact Controller');
 
@@ -27,7 +31,7 @@ myApp.controller('contactController', ['$scope', '$http', function($scope, $http
 		//check if a suer's info is saved in localStorage
 		if(JSON.parse(localStorage.getItem('userProfile'))){
 			//if yes, save userProvile as $scope.userProfile
-			$scope.userProfile=JSON.parse(localStorge.getItem('userProfile'));
+			$scope.userProfile=JSON.parse(localStorage.getItem('userProfile'));
 			console.log('logged in', $scope.userProfile);
 			$scope.showUser = true;
 		} else {
