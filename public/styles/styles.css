@@ -37,6 +37,9 @@ body {
 	height: 50px;
 }
 
+.main {
+	margin-bottom: 100px;
+}
 .footer {
 	background-color: #322E00;
 	color: #99913A;
@@ -62,7 +65,7 @@ body {
 
 .mainpic{
 	width: 100%;
-	 height: 100%;
+	 height: auto;
 	 position: fixed;
 	 left: 0px;
 	 top: 150px;
@@ -241,4 +244,8 @@ flex-direction: row;
 	color: #F5F5F5;
 	border-radius: 5px;
 	margin-bottom: 10px;
+}
+
+.clients {
+	margin-left: 30px;
 }

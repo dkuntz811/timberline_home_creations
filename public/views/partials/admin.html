@@ -1,10 +1,19 @@
-<header>Timberline Mission Control</header><br><br>
-<section ng-init = "getContacts()">
+<h1>Timberline Mission Control</h1><br><br>
+<div class = "clients" ng-init = "getContacts()">
 <div ng-repeat="contact in contacts">
  <strong>Name:</strong> {{contact.first_name}} {{contact.last_name}}
  <strong>Email:</strong> {{contact.email}}
  <strong>Subject:</strong> {{contact.subject}}<br>
  <strong>Message:</strong> {{contact.message}}<br><br>
+ <label>Contacted:
+   <input type = "checkbox" ng-model="checkboxModel.value1">
+ </label>
+ <label>Notes:
+   <input type = "text" ng-model = "notes">
+ </label>
+ <label>Delete Contact Info:
+   <button class = "delete" type = "button" ng-click = "deleteContact()"></button>
+ </label>
 </div>
-<button ng-click="logOut()">Log Out</button>
-</section>
+<button ng-click="logOut()">Log Out</button><br><br><br>
+</div>
