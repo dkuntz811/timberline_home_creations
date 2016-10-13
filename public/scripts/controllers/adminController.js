@@ -1,6 +1,6 @@
 var logOutUrl = 'https://dkuntz811.auth0.com/v2/logout';
 
-myApp.controller('adminController', ['$scope', '$http', function($scope, $http){
+myApp.controller('adminController', ['$scope', '$http', '$route', function($scope, $http, $route){
 	console.log('in admin Controller');
 
  $scope.contacts = [];
@@ -31,7 +31,7 @@ myApp.controller('adminController', ['$scope', '$http', function($scope, $http){
 
  };
 
- $scope.postNote = function(note){
+ $scope.postNote = function(){
 	 var dataToSend = {
 		 note
 	 };
@@ -43,10 +43,11 @@ myApp.controller('adminController', ['$scope', '$http', function($scope, $http){
 		 data: dataToSend
 	 }).then(function(response){
 		 console.log('postnote response is ', response);
+		 $route.reload();
 	 }, function errorCallback(response){
 		 console.log('error in postnote', response);
 	 });//end .then
-	 
+
  };//end $scope.postNote
 
 

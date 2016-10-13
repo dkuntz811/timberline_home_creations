@@ -80,6 +80,24 @@ body {
 	color: #1C1A00
 }
 
+.about {
+	text-align: center;
+	color: #322E00
+}
+
+.fampic {
+	height: 300px;
+	width: 200px;
+	border: 20px #322E00;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.family {
+	border: 20px #322E00;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
 .separator {
 	margin-bottom: 100px;
 }
@@ -258,4 +276,26 @@ flex-direction: row;
 }
 .clients {
 	margin-left: 30px;
+}
+
+.submitnote{
+	background-color: #322E00;
+	color: #F5F5F5;
+	border-radius: 5px;
+	width: 50px;
+
+}
+
+.delete{
+	background-color: #322E00;
+	color: #F5F5F5;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.logout {
+	background-color: #322E00;
+	color: #F5F5F5;
+	border-radius: 5px;
+	margin-bottom: 10px;
 }

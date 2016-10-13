@@ -6,16 +6,16 @@
  <strong>Subject:</strong> {{contact.subject}}<br>
  <strong>Message:</strong> {{contact.message}}<br>
  <span ng-init = "getNote()">
- <strong>Darren's Notes:&nbsp;&nbsp;&nbsp;  </strong>{{note}}</span><br><br>
+ <strong ng-repeat="note in clients">Darren's Notes:&nbsp;&nbsp;&nbsp;</strong>{{note}}</span><br><br>
  <form>
  <label>Notes:
    <input type = "text" ng-model = "note">
  </label>
- <button class = "submitnote" type = "button" ng-click = "postNote(note)">Submit</button>
+ <button class = "submitnote" type = "button" ng-click = "postNote()">Submit</button>
  </form>
  <label>Delete Contact Info:
    <button class = "delete" type = "button" ng-click = "deleteContact()">Delete</button>
  </label><br><br><br>
 </div>
-<button ng-click="logOut()">Log Out</button>
+<button class = "logout" ng-click="logOut()">Log Out</button>
 </div>
