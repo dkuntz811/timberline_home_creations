@@ -4,12 +4,15 @@
  <strong>Name:</strong> {{contact.first_name}} {{contact.last_name}}
  <strong>Email:</strong> {{contact.email}}
  <strong>Subject:</strong> {{contact.subject}}<br>
- <strong>Message:</strong> {{contact.message}}<br><br>
- <strong>Darren's Notes:</strong>{{note.notes}}<br><br>
+ <strong>Message:</strong> {{contact.message}}<br>
+ <span ng-init = "getNote()">
+ <strong>Darren's Notes:&nbsp;&nbsp;&nbsp;  </strong>{{note}}</span><br><br>
+ <form>
  <label>Notes:
-   <input type = "text" ng-model = "notes">
+   <input type = "text" ng-model = "note">
  </label>
- <button class = "submitnote" type = "button" ng-click = "postNote()">Submit</button>
+ <button class = "submitnote" type = "button" ng-click = "postNote(note)">Submit</button>
+ </form>
  <label>Delete Contact Info:
    <button class = "delete" type = "button" ng-click = "deleteContact()">Delete</button>
  </label><br><br><br>

@@ -7,22 +7,35 @@ myApp.controller('adminController', ['$scope', '$http', function($scope, $http){
  $scope.notes = [];
 
  $scope.getContacts = function(){
-	 console.log('in getContacts function');
+	//  console.log('in getContacts function');
 	 $http({
 		 method: 'GET',
 		 url: '/admin'
 	 }).then(function(response){
 		 $scope.contacts=response.data;
-		 console.log('get response is', response);
+		//  console.log('get response is', response);
 	 }, function errorCallback(response){
 		 console.log('error response is', response);
 	 });
  };
 
- $scope.postNote = function(){
+ $scope.getNote = function(){
+	 $http({
+		 method: 'GET',
+		 url: '/getnote'
+	 }).then(function(response){
+		 $scope.note=response.data;
+	 }, function errorCallback(response){
+		 console.log('getnote error is ', response);
+	 });
+
+ };
+
+ $scope.postNote = function(note){
 	 var dataToSend = {
-		 note: $scope.note
+		 note
 	 };
+   console.log($scope.note);
 	 console.log('dataToSend is ', dataToSend);
 	 $http({
 		 method: 'POST',
@@ -33,6 +46,7 @@ myApp.controller('adminController', ['$scope', '$http', function($scope, $http){
 	 }, function errorCallback(response){
 		 console.log('error in postnote', response);
 	 });//end .then
+	 
  };//end $scope.postNote
 
 
@@ -56,7 +70,7 @@ myApp.controller('adminController', ['$scope', '$http', function($scope, $http){
 		 url: logOutUrl
 	 }).then(function(data){
 		 if(data.data == 'OK'){
-			 emptyLocalStorage();
+			//  emptyLocalStorage();
 			 $scope.showUser = false;
 		 }
 		 window.location.href='http://localhost:7070/#/home';

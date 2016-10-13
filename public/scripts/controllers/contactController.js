@@ -24,6 +24,7 @@ myApp.controller('contactController', ['$scope', '$http', function($scope, $http
 		}, function errorCallback(response){
 			console.log('err', response);
 		});
+		dataToSend = {};
 	};
 
 	$scope.init = function(){
@@ -65,12 +66,14 @@ myApp.controller('contactController', ['$scope', '$http', function($scope, $http
 			url: logOutUrl
 		}).then(function(data){
 			if(data.data == 'OK'){
-				emptyLocalStorage();
+
 				$scope.showUser = false;
+				window.location.href='http://localhost:7070/#/home';
 			}
-			window.location.href='http://localhost:7070/#/home';
+
 		});//end $http
 	};//end logout
+
 
 
 

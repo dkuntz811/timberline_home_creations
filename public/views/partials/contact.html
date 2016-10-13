@@ -27,7 +27,7 @@
 		<input class = "subjectinput" ng-model = "subject" type = "text" >
 	</label><br>
 	<label class = "message" for="message" type = "text">Message:<br>
-		<input class = "messageinput" ng-model = "message" type = "text" placeholder="Message (500 characters or less)">
+		<textarea class = "messageinput" ng-model = "message" type = "text" placeholder="Message (500 characters or less)"></textarea>
 	</label><br><br>
 	<button id ="submit" type = "button" class = "btn btn-primary" ng-click = "postContact()">Submit</button>
 </form>

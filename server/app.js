@@ -9,12 +9,12 @@ app.use(bodyParser.json());
 
 //routers
 
+var admin = require('../routers/admin');
+app.use('/', admin);
 
 var contact = require('../routers/contact');
 app.use('/', contact);
 
-var admin = require('../routers/admin');
-app.use('/', admin);
 
 var index = require('../routers/index');
 app.use('/', index);

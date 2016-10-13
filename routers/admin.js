@@ -27,7 +27,28 @@ router.get('/admin', function(req, res){
 	});//end pg.connect
 });//end router.get
 
+router.get('/getnote', function (req, res){
+	console.log('in get notes');
+	pg.connect(connectionString, function(err, client, done){
+		if(err){
+			console.log('get note connection error is', err);
+		} else {
+			var results = [];
+			var queryResults = client.query ('SELECT * FROM contacts');
+			queryResults.on('row', function(row){
+				results.push(row);
+			});
+			queryResults.on('end', function(){
+				done();
+				return res.json(results);
+				console.log('notes results are', results);
+			});//end on end
+		}
+	}); //end pg.connect
+});//end router.get
+
 router.post ('/note', function (req, res){
+	console.log('req.body is ', req.body);
 	var note = req.body;
 	console.log('note is', note);
 	pg.connect(connectionString, function (err, client, done){
@@ -44,6 +65,8 @@ router.post ('/note', function (req, res){
 		});
 	});
 });//end router.post
+
+
 
 router.post('/clients/id', function (req, res){
 	console.log(req.params.id);
