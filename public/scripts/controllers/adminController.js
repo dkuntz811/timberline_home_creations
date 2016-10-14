@@ -24,11 +24,12 @@ myApp.controller('adminController', ['$scope', '$http', '$route', function($scop
 		 method: 'GET',
 		 url: '/getnote'
 	 }).then(function(response){
-		 $scope.note=response.data;
+		 $scope.notes=response.data;
+		 console.log(response.data);
 	 }, function errorCallback(response){
 		 console.log('getnote error is ', response);
 	 });
-
+    console.log($scope.notes);
  };
 
  $scope.postNote = function(){

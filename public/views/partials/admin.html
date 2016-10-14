@@ -6,7 +6,7 @@
  <strong>Subject:</strong> {{contact.subject}}<br>
  <strong>Message:</strong> {{contact.message}}<br>
  <span ng-init = "getNote()">
- <strong ng-repeat="note in clients">Darren's Notes:&nbsp;&nbsp;&nbsp;</strong>{{note}}</span><br><br>
+ <strong>Darren's Notes:&nbsp;&nbsp;&nbsp;</strong></span><br><br><p ng-repeat="note in notes">{{note.note}}</p>
  <form>
  <label>Notes:
    <input type = "text" ng-model = "note">

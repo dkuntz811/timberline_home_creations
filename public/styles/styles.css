@@ -83,6 +83,18 @@ body {
 .about {
 	text-align: center;
 	color: #322E00
+	margin-left: 30px;
+}
+
+.slogan {
+	text-align: center;
+	color: #322E00
+	margin-left: 30px;
+}
+
+.aboutinfo > img,
+.aboutinfo > section{
+	display: inline-block;
 }
 
 .fampic {
@@ -91,12 +103,34 @@ body {
 	border: 20px #322E00;
 	margin-top: 50px;
 	margin-bottom: 100px;
+	margin-left: 30px;
+	display: inline-block;
 }
 
 .family {
 	border: 20px #322E00;
-	margin-top: 50px;
+	margin-top: 0px;
 	margin-bottom: 100px;
+	display: inline-block;
+}
+
+.timber {
+	margin-left: 300px;
+	margin-top: 0px;
+	padding-top: 20px;
+	font-size: 23px;
+	margin-bottom: 500px;
+	color: #322E00
+	display: inline-block;
+}
+
+.lists {
+	margin-left: 22px;
+	display: inline-block;
+}
+
+.bio {
+	margin left: 10px;
 }
 .separator {
 	margin-bottom: 100px;
