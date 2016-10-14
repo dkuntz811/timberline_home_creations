@@ -49,7 +49,7 @@ router.get('/getnote', function (req, res){
 
 router.post ('/note', function (req, res){
 	console.log('req.body is ', req.body);
-	var note = req.body;
+	var note = req.body.noteIn;
 	console.log('note is', note);
 	pg.connect(connectionString, function (err, client, done){
 		if (err) {

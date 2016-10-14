@@ -32,11 +32,11 @@ myApp.controller('adminController', ['$scope', '$http', '$route', function($scop
     console.log($scope.notes);
  };
 
- $scope.postNote = function(){
+ $scope.postNote = function(noteIn){
 	 var dataToSend = {
-		 note
+		 noteIn
 	 };
-   console.log($scope.note);
+   console.log(noteIn);
 	 console.log('dataToSend is ', dataToSend);
 	 $http({
 		 method: 'POST',

@@ -2,7 +2,7 @@ var lock = new Auth0Lock('nUkdDmhYSGNLolT7jWzmYZ39Efq6CH0Y', 'dkuntz811.auth0.co
 var logOutUrl = 'https://dkuntz811.auth0.com/v2/logout';
 
 
-myApp.controller('contactController', ['$scope', '$http', function($scope, $http){
+myApp.controller('contactController', ['$scope', '$http', ,'$route', function($scope, $http, $route){
 	console.log('in contact Controller');
 
 	$scope.postContact = function(){
@@ -21,6 +21,7 @@ myApp.controller('contactController', ['$scope', '$http', function($scope, $http
 			data: dataToSend
 		}).then(function(response){
 			console.log('post response is', response);
+			$route.reload();
 		}, function errorCallback(response){
 			console.log('err', response);
 		});
