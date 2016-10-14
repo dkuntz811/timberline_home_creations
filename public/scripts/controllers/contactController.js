@@ -2,7 +2,7 @@ var lock = new Auth0Lock('nUkdDmhYSGNLolT7jWzmYZ39Efq6CH0Y', 'dkuntz811.auth0.co
 var logOutUrl = 'https://dkuntz811.auth0.com/v2/logout';
 
 
-myApp.controller('contactController', ['$scope', '$http', ,'$route', function($scope, $http, $route){
+myApp.controller('contactController', ['$scope', '$http', '$route', function($scope, $http, $route){
 	console.log('in contact Controller');
 
 	$scope.postContact = function(){

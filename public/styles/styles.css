@@ -51,6 +51,7 @@ body {
 	bottom: 0px;
 	margin-top: 50px;
 	padding-top: 20px;
+	border-top: 70px;
 }
 
 #home {
@@ -70,7 +71,7 @@ body {
 	 left: 0px;
 	 top: 150px;
 	 z-index: -1;
-	 margin-bottom: 100px;
+	 margin-bottom: auto;
 }
 
 .mainpictext {
@@ -78,6 +79,10 @@ body {
 	text-align: center;
 	margin-top: 580px;
 	color: #1C1A00
+}
+
+.separator {
+	margin-bottom: 100px;
 }
 
 .about {
@@ -94,14 +99,15 @@ body {
 
 .aboutinfo > img,
 .aboutinfo > section{
-	display: inline-block;
+	display: inline;
+	float: left;
 }
 
 .fampic {
 	height: 300px;
 	width: 200px;
 	border: 20px #322E00;
-	margin-top: 50px;
+
 	margin-bottom: 100px;
 	margin-left: 30px;
 	display: inline-block;
@@ -109,17 +115,17 @@ body {
 
 .family {
 	border: 20px #322E00;
-	margin-top: 0px;
+
 	margin-bottom: 100px;
 	display: inline-block;
 }
 
 .timber {
-	margin-left: 300px;
-	margin-top: 0px;
+	margin-left: 50px;
+
 	padding-top: 20px;
 	font-size: 23px;
-	margin-bottom: 500px;
+	margin-bottom: 300px;
 	color: #322E00
 	display: inline-block;
 }
@@ -130,10 +136,7 @@ body {
 }
 
 .bio {
-	margin left: 10px;
-}
-.separator {
-	margin-bottom: 100px;
+	margin left: 0px;
 }
 
 .stretch {
