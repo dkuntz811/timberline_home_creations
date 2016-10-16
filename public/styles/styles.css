@@ -313,13 +313,15 @@ flex-direction: row;
 }
 .clients {
 	margin-left: 30px;
+	font-size: 18px;
+	border-bottom: 5px: #322E00;
 }
 
 .submitnote{
 	background-color: #322E00;
 	color: #F5F5F5;
 	border-radius: 5px;
-	width: 50px;
+	width: 70px;
 
 }
 
@@ -328,6 +330,7 @@ flex-direction: row;
 	color: #F5F5F5;
 	border-radius: 5px;
 	margin-bottom: 10px;
+	width: 70px;
 }
 
 .logout {
