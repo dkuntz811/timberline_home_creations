@@ -24,6 +24,6 @@ myApp.config(['$routeProvider', function($routeProvider){
 		templateUrl: '/views/partials/home.html'
 	}).
 	otherwise({
-		redirectTo: '/index'
+		redirectTo: '/home'
 	});
 }]);//myApp config
