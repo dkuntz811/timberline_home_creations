@@ -15,3 +15,6 @@ pics VARCHAR (30)
 
 --GET all information for tables
 SELECT * FROM clients;
+
+--Need to organize database using user email
+SELECT * FROM notes Join....
