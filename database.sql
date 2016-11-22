@@ -18,3 +18,6 @@ SELECT * FROM clients;
 
 --Need to organize database using user email
 SELECT * FROM notes Join....
+
+--email is common factor in both tables
+WHERE client.email = 
