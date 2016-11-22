@@ -18,6 +18,9 @@ router.post('/contact', function (req, res){
 									'VALUES($1, $2, $3, $4, $5)', [contact.first_name, contact.last_name, contact.email, contact.subject, contact.message]);
 
 			} //end else
+			queryResults.on('end', function(){
+		var queryResults = client.query('INSERT INTO clients (email) VALUES($3)', [contact.email]);
+	});
 			 queryResults.on('end', function(){
 						done();
 						//send back success to client
